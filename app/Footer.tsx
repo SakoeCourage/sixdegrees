@@ -75,9 +75,9 @@ function Footer() {
                         </nav>
                     </nav>
                     <nav className=' col-span-2 lg:col-span-1 flex flex-col gap-5 items-start px-3 lg:px-7 py-3 lg:py-0'>
-                        <h2 className='text-light-white uppercase'>Six Degree&apos;s Programs and management</h2>
+                        <h2 className='text-light-white uppercase'>Six Degrees Programs and management</h2>
                         <nav className='text-gray-400'>
-                            Six Degree&apos;s Programs and management positively influence the country and empowers young men and women with relevant skills .
+                            Six Degrees Programs and management positively influence the country and empowers young men and women with relevant skills .
                         </nav>
                         <nav className=' w-max py-2 px-7 rounded-3xl flex items-center justify-between gap-10 bg-gray-300'>
                             <Link href="/business#investors" className=' text-deep-dark font-semibold uppercase flex items-center gap-2'>
