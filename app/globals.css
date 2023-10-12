@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-content {
+  @apply container mx-auto
+}
+
+
+
+.apply-bg-hero-image {
+  background:
+    conic-gradient(at 10% 50%, #0000 75%, #bf1c2c 0),
+    conic-gradient(at 10% 50%, #0000 75%, #bf1c2c 0) calc(1*32px) calc(3*32px),
+    conic-gradient(at 10% 50%, #0000 75%, #bf1c2c 0) calc(2*32px) calc(1*32px),
+    conic-gradient(at 10% 50%, #0000 75%, #bf1c2c 0) calc(3*32px) calc(4*32px),
+    conic-gradient(at 10% 50%, #0000 75%, #bf1c2c 0) calc(4*32px) calc(2*32px),
+    conic-gradient(at 50% 10%, #0000 75%, #bf1c2c 0) 0 calc(4*32px),
+    conic-gradient(at 50% 10%, #0000 75%, #bf1c2c 0) calc(1*32px) calc(2*32px),
+    conic-gradient(at 50% 10%, #0000 75%, #bf1c2c 0) calc(2*32px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #bf1c2c 0) calc(3*32px) calc(3*32px),
+    conic-gradient(at 50% 10%, #0000 75%, #bf1c2c 0) calc(4*32px) calc(1*32px),
+    #ffffff;
+  background-size: 160px 160px;
+
+}
+
+.apply-bg-hero-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.add_underline{
+  position: relative;
+}
+
+.add_underline::after{
+   position: absolute;
+   content: "";
+   height: 4px;
+   width: 60%;
+   bottom: -5px;
+   right: 2%;
+
+   @apply bg-primary-gray/75
+}
+.add_underline::before{
+   position: absolute;
+   content: "";
+   height: 0.2px;
+   width: 55%;
+   bottom: -10px;
+   right: 4%;
+
+   @apply bg-primary-gray/60 rounded-full
+}
+
+
+.hero-image-holder{
+  position: relative;
+  isolation: isolate;
+}
+.hero-image-holder::before{
+  content: "";
+  position: absolute;
+ 
+  z-index: -1;
+  height: 80%;
+  width: 100%;
+  outline: 3px dotted #fee2e2;
+  @apply rounded-full inset-x-0 -bottom-10  bg-[#fee2e2] shadow-xl
+}
+
+
+.add_middle_underline{
+  position: relative;
+}
+
+.add_middle_underline::after{
+   position: absolute;
+   content: "";
+   height: 4px;
+   bottom: -10px;
+   @apply bg-primary-color inset-x-10
+}
+
+
+.soft_card{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 2rem;
+}
+
+.our-pedigree{
+  background-image: url('../public//images/homepage/ourpedigree.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+
+}
+
+.gradient-bg {
+  box-shadow: #363A3E 0 0 90px 33px;
+  background: radial-gradient(circle,#363A3E,#363A3E) ;
+  @apply blur-lg opacity-80
+}
