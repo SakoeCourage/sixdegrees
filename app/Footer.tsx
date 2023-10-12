@@ -31,10 +31,10 @@ function Footer() {
                         <ul className=' flex flex-col gap-1 text-gray-400 px-2 md:px-0'>
                             <li className='text-light-white '>  SIX DEGREE GHANA</li>
                             <li>
-                                Old Ashonmang,
+                                Old Ashonmang
                             </li>
                             <li>
-                                Close to ICGC North Legon,
+                                Close to ICGC North Legon
 
                             </li>
                             <li>
