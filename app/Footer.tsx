@@ -6,29 +6,30 @@ function Footer() {
         <div className=' bg-black/95 isolate pt-10 mt-44'>
             <div className='relative container-content py-16 '>
                 <div className='gradient-bg absolute top-[10%] bottom-[20%] aspect-square overflow-hidden left-10  z-[-1] w-[calc(min(30rem,60vh))] transform translate-x-[-50%] rounded-full '></div>
-                <div className=' grid grid-cols-2 py-8 border-b border-light-gray/30'>
-                    <div className=' text-white text-5xl leading-tight uppercase'>
+                <div className=' grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 py-8 border-b border-light-gray/30'>
+                    <div className=' text-white lg:text-5xl mx-auto px-7 text-3xl leading-tight uppercase'>
                         Ready to Unleash Your Full Potential? <br />
                         Contact Us Today!
                     </div>
-                    <div className='flex items-center flex-col gap-5'>
-                        <nav className=' max-w-md w-full py-5 px-7 rounded-3xl flex items-center justify-between gap-10 bg-light-dark'>
-                            <span className=' text-light-white'>
+                    <div className='flex items-center flex-col gap-5 w-full px-7 lg:px-0'>
+                        <nav className=' max-w-none lg:max-w-md w-full py-5 px-7 rounded-3xl flex items-center justify-between gap-10 bg-light-dark'>
+                            <span className=' text-light-white text-sm lg:text-base'>
                                 sixdegress@gmail.com
                             </span>
                             <svg className=' text-primary-color' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="m16 5l5 5l-5 5" /><path d="M21 10h-8C7.477 10 3 14.477 3 20v1" /></g></svg>
                         </nav>
-                        <Link href='/about#contact-us' className=' text-primary-gray font-medium text-lg bg-primary-color rounded-3xl w-full max-w-md py-4 px-7'>
+                        <Link href='/about#contact-us' className=' text-primary-gray text-sm lg:text-lg font-medium  bg-primary-color rounded-3xl w-full max-w-none lg:max-w-md py-4 px-7'>
                             Contact Us
                         </Link>
 
                     </div>
                 </div>
 
-                <div className='py-8 grid grid-cols-3'>
-                    <nav className=' flex flex-col gap-5'>
-                        <h2 className='text-light-white'>  SIX DEGREE GHANA</h2>
-                        <ul className=' flex flex-col gap-1 text-gray-400'>
+                <div className='py-8 grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-0'>
+                    <nav className=' flex flex-col lg:items-start items-center gap-5'>
+
+                        <ul className=' flex flex-col gap-1 text-gray-400 px-2 md:px-0'>
+                            <li className='text-light-white '>  SIX DEGREE GHANA</li>
                             <li>
                                 Old Ashonmang,
                             </li>
@@ -55,28 +56,25 @@ function Footer() {
                             </a>
                         </nav>
                     </nav>
-                    <nav className=' flex flex-col gap-5'>
-                        <h2 className='text-light-white'>QUICK LINKS</h2>
+                    <nav className=' flex flex-col gap-5 lg:items-start items-center'>
                         <nav className=' flex flex-col gap-1 text-gray-400'>
+                            <h2 className='text-light-white'>QUICK LINKS</h2>
+                            <Link href="/" className=' underline'>
+                                Home
+                            </Link>
                             <Link href='/about' className=' underline'>
                                 About
                             </Link>
-                            <Link href='/projects' className=' underline'>
-                                Projects
+                            <Link href='/programs' className=' underline'>
+                                Programs
+                            </Link>
+                            <Link href='/contact' className=' underline'>
+                                Contact us
+                            </Link>
 
-                            </Link>
-                            <Link href='/resources' className=' underline'>
-                                Resources
-                            </Link>
-                            <Link href="/business" className=' underline'>
-                                Our Business
-                            </Link>
-                            <Link href="/business#organizationstructure" className=' underline'>
-                                The Organization
-                            </Link>
                         </nav>
                     </nav>
-                    <nav className=' flex flex-col gap-5'>
+                    <nav className=' col-span-2 lg:col-span-1 flex flex-col gap-5 items-start px-3 lg:px-7 py-3 lg:py-0'>
                         <h2 className='text-light-white uppercase'>Six Degree's Programs and management</h2>
                         <nav className='text-gray-400'>
                             Six Degree's Programs and management positively influence the country and empowers young men and women with relevant skills .

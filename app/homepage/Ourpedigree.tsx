@@ -45,7 +45,7 @@ function Ourpedigree() {
     return (
         <div className='our-pedigree isolate relative '>
             <div className=' z-[-1] absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/60'></div>
-            <nav className='   px-10 z-10'>
+            <nav className=' px-3  lg:px-10 z-10'>
                 <div className=' container-content translate-y-14'>
                     <p className=' text-white text-4xl leading-relaxed font-semibold'>
                         Why choose us?
@@ -61,7 +61,7 @@ function Ourpedigree() {
                     </p>
                 </div>
 
-                <nav className="py-5 grid grid-cols-2 gap-5 translate-y-32 max-w-[100rem] mx-auto">
+                <nav className="py-5 grid grid-cols-1 lg:grid-cols-2 gap-5 translate-y-32 max-w-[100rem] mx-auto">
                     {pedigrees.map((p, i) => <Inforcard key={i} title={p.title} icon={p.icon}>
                         {p.content}
                     </Inforcard>)}

@@ -84,21 +84,21 @@ export function Ourteam() {
     return (
         <div className=' bg-gradient-to-b from-primary-gray/60 to-white py-24 '>
             <div className=' container-content '>
-                <h6 className='add_middle_underline w-max mx-auto font-normal text-primary-text-gray  text-4xl'>
+                <h6 className='add_middle_underline w-max mx-auto font-normal text-primary-text-gray text-2xl lg:text-4xl'>
                     Our Team
                 </h6>
-                <div className=' grid grid-cols-3 gap-5 py-10  mx-auto'>
+                <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10  mx-auto'>
 
                     {Team.map((member, i) => {
                         return (
-                            <nav key={i} className=' w-full  rounded-xl flex flex-col gap-5 py-3 '>
-                                <Image placeholder='blur' blurDataURL='/images/blur.png' className=' aspect-[7/6] object-cover rounded-xl' width={500} height={500} quality={100} alt='team member' src={member?.imageUrl} />
+                            <nav key={i} className=' w-full   rounded-xl flex flex-col gap-5 py-3 px-5 '>
+                                <Image placeholder='blur' blurDataURL='/images/blur.png' className=' w-full aspect-[7/6] object-cover rounded-xl' width={500} height={500} quality={100} alt='team member' src={member?.imageUrl} />
                                 <nav className=' flex flex-col gap-2 px-3'>
-                                    <h2 className=' text-2xl font-bold tracking-wide text-deeper-gray'>{member.MemberName}</h2>
+                                    <h2 className=' text-xl lg:text-2xl font-bold tracking-wide text-deeper-gray'>{member.MemberName}</h2>
                                     <h6 className=' text-light-gray'>
                                         {member.MemberPosition}
                                     </h6>
-                                    <nav className=' flex items-center gap-2'>
+                                    <nav className=' flex items-center gap-2 mt-auto '>
                                         <button className=' rounded-full aspect-square thick-gray-bs h-10 flex items-center justify-center p-2 bg-primary-color/20 text-primary-color'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="currentColor" d="M2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39V7.85c0-.7.2-1.18 1.2-1.18h1.28V4.51c-.22-.03-.98-.09-1.86-.09c-1.85 0-3.11 1.12-3.11 3.19v1.78H8.46v2.41h2.09V18H2.89a.89.89 0 0 1-.89-.88V2.88c0-.49.4-.88.89-.88z" /></svg>
                                         </button>
