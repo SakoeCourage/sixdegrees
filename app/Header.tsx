@@ -29,22 +29,22 @@ export function getMatchorEqual(path: string, pattern: string, exact: boolean = 
 }
 function Header() {
     const path = usePathname()
-    const [showDropDown, setShowDropDown] = useState(false)
+    const [showDropDown, setShowDropDown] = useState<Boolean>(false)
 
 
     return (
-        <header className=' bg-primary-color border-b-2 border-primary-color sticky   top-0 z-40 '>
+        <header className=' bg-primary-color/95 backdrop-blur-lg border-b-2 border-primary-color sticky   top-0 z-40 '>
             <div className=' relative'>
                 <nav className='container-content py-3 lg:py-5 px-2 lg:px-0  text-white flex '>
                     <ul className='flex items-center gap-5'>
                         <li className=''>
-                            <Link className={`${getMatchorEqual(path, '/', true) && 'font-bold text-lg '} flex items-center justify-center gap-1`} href="/"> 
+                            <Link className={`${getMatchorEqual(path, '/', true) && 'font-bold text-lg '} flex items-center justify-center gap-1`} href="/">
                                 <Image className=' h-8 w-8 p-0 rounded-full   bg-white aspect-square' src="/images/favicon.png" width={100} height={100} quality={100} alt='logo' />
-                                 <nav className=' inline-block poppins_regular font-bold text-xs my-auto'> Six Degrees</nav>
+                                <nav className=' inline-block poppins_regular font-bold text-xs my-auto'> Six Degrees</nav>
                             </Link>
                         </li>
                     </ul>
-                    <ul className='absolute transition-all duration-300 ease-in-out inset-x-0 top-[100%] lg:relative hidden lg:flex items-center  lg:justify-normal lg:flex-row gap-5 lg:self-end self-center  justify-center lg:ml-auto flex-col bg-primary-color w-full lg:w-auto '>
+                    <ul className='absolute transition-all duration-300 ease-in-out inset-x-0 top-[100%] lg:relative hidden lg:flex items-center  lg:justify-normal lg:flex-row gap-5 lg:self-end self-center  justify-center lg:ml-auto flex-col  w-full lg:w-auto '>
                         <li>
                             <Link href="/" className={`${getMatchorEqual(path, '/', true) && 'font-bold text-lg '}`}>Home</Link>
                         </li>
@@ -52,12 +52,12 @@ function Header() {
                             <Link href="/about" className={`${getMatchorEqual(path, '/about', false) && 'font-bold text-lg '}`}>About us</Link>
                         </li>
                         <li>
-                            <Link href="/programs" className={`${getMatchorEqual(path, '/projects', false) && 'font-bold text-lg '}`}>
+                            <Link href="/programs" className={`${getMatchorEqual(path, '/programs', false) && 'font-bold text-lg '}`}>
                                 Programs
                             </Link>
                         </li>
                         <li className=' rounded-xl bg-primary-gray px-5 py-1 text-black'>
-                            <Link href="/contact" className={`${getMatchorEqual(path, '/projects', false) && 'font-bold text-lg '}`}>
+                            <Link href="/contact" className={`${getMatchorEqual(path, '/contact', false) && 'font-bold text-lg '}`}>
                                 Contact Us
                             </Link>
                         </li>

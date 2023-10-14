@@ -4,7 +4,7 @@ import Horizontalcarousel from './Horizontalcarousel'
 
 function Hero() {
     return (
-        <div className='   object-cover overflow-hidden '>
+        <div className='object-cover overflow-hidden '>
             <Horizontalcarousel />
         </div>
     )

@@ -57,12 +57,12 @@ function Horizontalcarousel() {
                             </nav>
 
                             <nav className=' flex flex-col gap-3 max-w-2xl px-6 lg:py-8 text-xs md:text-sm lg:text-base items-center lg:justify-center h-full mx-auto '>
-                                <nav className=' text-primary-gray font-medium poppins_regular '>
+                                <nav className=' text-primary-gray font-medium poppins_regular leading-relaxed '>
                                     <b>Six Degrees Consultancy</b> is a full-service, cross-industry, end-to-end consulting company with registration number CS344512018.
                                     We provide comprehensive professional and management consulting, program, and project management services.
                                     The company is based in the capital city of Accra, Ghana.
                                 </nav>
-                                <Link href="/about" className=' px-2  text-xs md:text-sm lg:text-base py-2 bg-primary-gray text-black rounded-lg    w-max flex items-center gap-2'>
+                                <Link href="/about" className=' px-2 self-start  text-xs md:text-sm lg:text-base py-2 bg-primary-gray text-black rounded-lg shadow-md w-max flex items-center gap-2'>
                                     Read More
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.25 4.5A1.75 1.75 0 0 0 4.5 6.25v11.5c0 .966.783 1.75 1.75 1.75h11.5a1.75 1.75 0 0 0 1.75-1.75v-4a.75.75 0 0 1 1.5 0v4A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25A3.25 3.25 0 0 1 6.25 3h4a.75.75 0 0 1 0 1.5h-4ZM13 3.75a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0V5.56l-5.22 5.22a.75.75 0 0 1-1.06-1.06l5.22-5.22h-4.69a.75.75 0 0 1-.75-.75Z" /></svg>
                                 </Link>

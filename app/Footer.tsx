@@ -80,7 +80,7 @@ function Footer() {
                             Six Degrees Programs and management positively influence the country and empowers young men and women with relevant skills .
                         </nav>
                         <nav className=' w-max py-2 px-7 rounded-3xl flex items-center justify-between gap-10 bg-gray-300'>
-                            <Link href="/business#investors" className=' text-deep-dark font-semibold uppercase flex items-center gap-2'>
+                            <Link href="/programs" className=' text-deep-dark font-semibold uppercase flex items-center gap-2'>
                                 <span>See our Programs</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.25 4.5A1.75 1.75 0 0 0 4.5 6.25v11.5c0 .966.783 1.75 1.75 1.75h11.5a1.75 1.75 0 0 0 1.75-1.75v-4a.75.75 0 0 1 1.5 0v4A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25A3.25 3.25 0 0 1 6.25 3h4a.75.75 0 0 1 0 1.5h-4ZM13 3.75a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0V5.56l-5.22 5.22a.75.75 0 0 1-1.06-1.06l5.22-5.22h-4.69a.75.75 0 0 1-.75-.75Z" /></svg>
 
